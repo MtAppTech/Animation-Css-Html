@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2130FD;
+    background-image: linear-gradient(19deg, #C6CAF1 0%, #33298A 100%);
+    height: 100vh;
+
+}
+
+h1 {
+    text-align: center;
+    padding: 50px;
+}
+
+.bg-image {
+    background-image: url(img/img1.png);
+    width: 836px;
+    height: 393px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+.img-auto {
+    background-image: url(img/img6.png);
+    bottom: 35px;
+    left: 20%;
+    position: absolute;
+    animation: car-move 0.5s linear alternate infinite;
+}
+
+.bg-wolk {
+    background-image: url(img/img2.png);
+    width: 150000%;
+    height: 77px;
+    top: 0;
+    position: absolute;
+    bottom: 152px;
+    left: 0;
+    animation: bg-bush-top-move 300s linear infinite;
+}
+
+.bg-bush-top {
+    background-image: url(img/img3.png);
+    width: 150000%;
+    height: 140px;
+    position: absolute;
+    bottom: 152px;
+    left: 0;
+    animation: bg-bush-top-move 60s linear infinite;
+}
+
+.bg-bush {
+    background-image: url(img/img5.png);
+    width: 150000%;
+    height: 75px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: bg-bush-move 20s linear infinite;
+}
+
+@keyframes bg-bush-move {
+    100% {
+        transform: translateX(-2000px);
+    }
+}
+
+@keyframes car-move {
+    0% {
+        transform: translateY(-2px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(2px);
+    }
+
+}
+
+@keyframes bg-bush-top-move {
+
+    100% {
+        transform: translateY(2px);
+        transform: translateX(-2000px);
+    }
+
+}
